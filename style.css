@@ -1,0 +1,398 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color:seashell;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: .5rem;
+}
+
+#logoimg{
+    width: 13%;
+    height: 7%;
+    display:flex;
+    border-radius: 16px;
+}
+
+.navbar-togger{
+    border: none;
+    font-size: 1.25rem;
+
+}
+
+.navbar-togger:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color:black;
+
+}
+
+@media (max-width:500px){
+    #logoimg{
+        visibility: hidden;
+    }
+}
+
+@media (min-width:991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 2px;
+    background-color: turquoise;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.nav-link:hover::before , .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+
+}
+
+
+.hero-section{
+    /* background: url("/img/20250630_155523.jpg") no-repeat center; */
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+}
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.1);
+    content:"";
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* for hero section */
+
+
+
+/*  */
+
+.getknow{
+    height: 50.3vh;
+    width: 68vw;
+    left: 360px;
+    position: relative;
+    margin-top: 7rem;
+    display: flex;
+    
+}
+.sub1{
+    height: 100%;
+    width: 40%;
+}
+
+.sub1 h1{
+    font-weight: 800;
+    line-height: 3.5rem;
+    size: 3rem;
+}
+
+.sub1 p h2{
+    font-weight: 500;
+    size: 1rem;
+    color: #878660;
+}
+
+.butn{
+    margin-top: 4rem;
+}
+.sub1 a{
+    background-color: #4Baf47;
+    padding: .8rem;
+    border-radius: 10px;
+    width: 5%;
+    height: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+
+.sub1 a:hover{
+    background-color: #878660;
+}
+
+.sub2{
+    height: 100%;
+    padding-left: 1%;
+    width: 25%;
+}
+
+.offer-section{
+    height: 74vh;
+    width: 100vw;
+    background-color:#f8f7f0;
+    background-size: cover;
+    margin-top: 7rem;
+}
+
+.offer-sec{
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-sec h1{
+    font-weight: 800;
+}
+
+.slder{
+    /* height:44vh;
+    width: 70%;
+    display: flex;
+    margin-left: 16rem;
+    justify-content: center;;
+    gap: 1.5rem;  */
+    
+    /* border: 2px solid red; */
+    width: 85.25rem;
+    margin-top: -2rem;
+    margin-left: 16rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+
+}
+.slde{
+    /* width: 20rem;
+    height: 40vh;
+       /* position: relative; *
+    border: 1px solid black;
+    * margin-left: 80px; *
+    background-color: #FFF;*/
+    
+    width: 22.78rem;
+    z-index: 1;
+    /* padding: 3.8rem 2.2rem; */
+    height: 43rem;
+    background-color: #f8f7f0; 
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background: #FFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    ;
+    /* box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.20); */
+
+
+}
+
+.sldimg{
+    width: 100%;
+    height: 10rem;
+
+}
+
+.slde h3{
+    font-weight: 500;
+    color: #4Baf47;
+    padding: 10px;
+}
+
+.slde p{
+    font-weight: 200;
+    padding: 8px;
+}
+
+
+.question{
+    height: 80vh;
+    width: 100%;
+    /* margin-top: 1rem; */
+    display: flex;
+    background-image: url(/img/green.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.question-sec{
+    width: 30%;
+    height: 56vh;
+    margin-top: 4%;
+    left: 10px;
+}
+
+.question-sec img{
+    width: 30rem;
+    height: 32rem;
+    border-radius: 20px;
+}
+
+.recentprj{
+    height: 28rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.recentprj .recentsec1{
+    /* background-color: #4Baf47; */
+    width: 35rem;
+    height: 14rem;
+    margin-left: 2rem;
+    border:2px solid #4Baf47;
+    margin-top: 8rem;
+}
+
+.agrimart{
+    height: 58vh;
+    width: 100%;
+    background-image: url(/img/rect.png);
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    
+}
+
+.greensec{
+    height: 18rem;
+    width: 36rem;
+    background-color: #4Baf47;
+    position: relative;
+    top: 7.6rem;
+    left: 18.5rem;
+}
+
+.iconstrip{
+    width:  40%;
+    height: 80px;
+    position: relative;
+    /* border: 2px solid red; */
+    left: 950px;
+    top: 130px;
+
+}
+.iconstrip img{
+    height: 60px;
+    margin-right: 5rem;
+}
+
+.section-slder2{
+    width: 100%;
+    height: 38rem;
+    /* border: 1px solid red; */
+}
+
+.slder2{
+    width: 70%;
+    height: 24.4rem;
+    margin-left: 15%;
+    /* border: 2px solid red; */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slde2{
+    height: 24rem;
+    width: 23rem;
+    /* margin: 1rem; */
+    /* border: 2px solid red; */
+}
+
+.slde2 img{
+    height: 16rem;
+    width: 22rem;
+
+}
+
+.imagwala{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31rem;
+    background: url(/img/leavles.png);
+    background-repeat: no-repeat;
+}
+
+
+.section-news{
+    width: 100%;
+    height: 38.2rem;
+    margin-top: 5rem;
+    background-image: url(/img/texture\ bg.png);
+
+}
+.slder3{
+    width: 70%;
+    height: 24.4rem;
+    margin-left: 15%;
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slde3{
+    height: 23rem;
+    width: 24rem;                                   
+    /* margin: 1rem; */
+    /* border: 2px solid red; */
+}
+
+.slde3 img{
+    height: 15rem;
+    width: 22rem;
+
+}
+
+.map-sec{
+    height: 36rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.mapp{
+    width: 45.9rem;
+    height: 30rem;
+    border: 1px solid firebrick;
+
+}
+
+.strip{
+    width: 100%;
+    height: 3.8rem;
+    background-color: yellow;
+}
+
+footer{
+    width: 100%;
+    height: 36.5rem;
+    background-color: #24231d;
+}

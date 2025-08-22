@@ -1,0 +1,273 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color:seashell;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: .5rem;
+}
+
+#logoimg{
+    width: 13%;
+    height: 7%;
+    display:flex;
+    border-radius: 16px;
+}
+
+.navbar-togger{
+    border: none;
+    font-size: 1.25rem;
+
+}
+
+.navbar-togger:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color:black;
+
+}
+
+@media (max-width:500px){
+    #logoimg{
+        visibility: hidden;
+    }
+}
+
+@media (min-width:991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 2px;
+    background-color: turquoise;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.nav-link:hover::before , .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+
+}
+    
+.hero-section{
+    background: url("/img/backgournd.png") no-repeat center;
+    background-size: cover;
+    height: 42vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hero-section::before{
+    background-color: rgba(0, 0, 0, 0.1);
+    content:"";
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+.section2{
+    height: 68svh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    /* border: 2px solid red; */
+}
+
+#secimg1{
+    height: 35rem;
+    width: 31rem;
+    /* margin-left: 8rem; */
+}
+
+#secimg2{
+    position: absolute;
+    bottom: -4.2rem;
+    left: 16rem;
+}
+
+
+
+.textwala{
+    height: 35rem;
+    width: 36rem;
+    /* background-color: #666777; */
+    /* border: 10px solid black; */
+}
+
+
+.butn{
+    background-color: #4Baf47;
+    padding: .8rem;
+    border-radius: 16px;
+    width: 8.3rem;
+    height: 3rem;
+}
+
+.butn:hover{
+    background-color: #878660;
+}
+
+
+
+.sec3{
+    width: 100%;
+    height: 50rem;
+ 
+}
+
+.forclass{
+    background-image: url(/img/leavles.png);
+    height: 90%;
+    background-repeat: no-repeat;
+}
+
+.forstrip{
+    height: 10%;
+    background-color: #1f1e17;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    gap:8rem;
+
+}
+
+.sec4{
+    background-image: url(/img/texture\ bg.png);
+    height: 42rem;
+    width: 100%;
+}
+
+
+.slder{
+    width: 70%;
+    height: 24.4rem;
+    margin-left: 15%;
+    /* border: 2px solid red; */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.slde{
+    height: 24rem;
+    width: 49rem;
+    /* margin: 1rem; */
+    border: 2px solid red;
+}
+
+
+.sec5{
+    height: 42vh;
+    width: 100%;
+}
+
+
+.slder1{
+    width: 70%;
+    height: 24.4rem;
+    margin-left: 15%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.slde1{
+    height: 22em;
+    width: 49rem;
+    /* margin: 1rem; */
+    border: 2px solid red;
+}
+
+.stripe{
+    height: 4rem;
+    width: 100%;
+    /* margin-top: 130px; */
+    background-color: #F8F7F0;
+    /* border: 2px solid red; */
+}
+
+    
+footer{
+    width: 100%;
+    height: 36.5rem;
+    background-color: #24231d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.fcontainer{
+    width: 80%;
+    height: 17rem;
+    /* border: 2px solid red; */
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+.fc1{
+    width: 28%;
+    height: 100%;
+    /* border: 2px solid blanchedalmond; */
+    padding: 1em;
+}
+
+
+.fc1 img{
+    height: 4rem;
+    width: 10rem;
+}
+
+
+.fc2{
+    width: 18%;
+    height: 100%;
+     padding: 1em;
+    /* border: 2px solid blanchedalmond; */
+}
+
+
+.fc3{
+    width: 25%;
+    height: 100%;
+     padding: 1em;
+    /* border: 2px solid blanchedalmond; */
+}
+
+.fc4{
+    width: 25%;
+    height: 100%;
+     padding: 1em;
+    /* border: 2px solid blanchedalmond; */
+}
